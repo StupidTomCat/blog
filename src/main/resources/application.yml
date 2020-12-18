@@ -1,0 +1,13 @@
+spring:
+  thymeleaf:
+    mode: HTML
+#    cache: false #关闭缓存
+    ##    prefix: classpath:/templates/
+    ##    suffix: .html
+  profiles:
+    active: develop-environment
+  messages:
+    basename: i18n/messages
+
+
+comment.avatar: /images/Jerry2.jpg

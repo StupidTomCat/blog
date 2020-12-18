@@ -1,0 +1,5 @@
+2020-07-12 13:59:53.607  INFO 13724 --- [restartedMain] com.yyh.BlogApplication                  : Starting BlogApplication on DESKTOP-2LSD5KA with PID 13724 (D:\Idea\Project_Location\blog\target\classes started by dell in D:\Idea\Project_Location\blog)
+2020-07-12 13:59:53.610  INFO 13724 --- [restartedMain] com.yyh.BlogApplication                  : The following profiles are active: product-environment
+2020-07-12 13:59:56.075  WARN 13724 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-12 13:59:56.372  WARN 13724 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-07-12 13:59:56.443  INFO 13724 --- [restartedMain] com.yyh.BlogApplication                  : Started BlogApplication in 3.224 seconds (JVM running for 4.51)
