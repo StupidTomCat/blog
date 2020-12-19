@@ -12,13 +12,14 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.util.ClassUtils;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.util.UUID;
 
 
 @Controller
@@ -74,20 +75,44 @@ public class BlogController {
     }
 
     @PostMapping("/blogs")
-    public String post(Blog blog, RedirectAttributes attributes, HttpSession session){
+    public String post(@RequestParam("fileUpload") MultipartFile fileUpload, Blog blog, RedirectAttributes attributes, HttpSession session){
+        //上传图片相关
+        //获取文件名
+        String fileName = fileUpload.getOriginalFilename();
+        if(!fileUpload.isEmpty()) {
+            //获取文件后缀名
+            String suffixName = fileName.substring(fileName.lastIndexOf("."));
+            //重新生成文件名
+            fileName = UUID.randomUUID() + suffixName;
+            //给blog的首图编写正确的路径
+            blog.setFirstPicture("/images/" + fileName);
+        }
+        //获取项目classes/static的地址
+        String staticPath = ClassUtils.getDefaultClassLoader().getResource("static").getPath();
+        //指定本地文件夹存储图片
+        String savePath = staticPath + File.separator + "images" + File.separator + fileName;
+
+        //blog相关
         blog.setUser((User) session.getAttribute("user"));
         blog.setType(typeService.getType(blog.getType().getId()));
         blog.setTags(tagService.listTag(blog.getTagIds()));
-
         Blog b;
         if(blog.getId() == null){
             b = blogService.saveBlog(blog);
         }else {
             b = blogService.updateBlog(blog.getId(),blog);
         }
-        if(b == null){
-            attributes.addFlashAttribute("message","操作失败");
-        }else {
+        //判断博客和文件的上传是否成功
+        try {
+            //将图片保存到static/images文件夹里  文件非空的情况
+            if(!fileUpload.isEmpty()) {
+                fileUpload.transferTo(new File(savePath));
+            }
+            if(b == null){
+                attributes.addFlashAttribute("message","操作失败");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
             attributes.addFlashAttribute("message","操作成功");
         }
         return REDIRECT_LIST;

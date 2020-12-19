@@ -48,7 +48,7 @@
   <!--中间内容-->
   <div  class="m-container m-padded-tb-big">
     <div class="ui container">
-      <form id="blog-form" action="#" th:object="${blog}" th:action="@{/admin/blogs}" method="post" class="ui form">
+      <form id="blog-form" action="#" th:object="${blog}" th:action="@{/admin/blogs}" method="post" class="ui form" enctype="multipart/form-data">
         <input type="hidden" name="published">
         <input type="hidden" name="id" th:value="*{id}">
         <div class="required field">
@@ -106,6 +106,8 @@
           <div class="ui left labeled input">
             <label class="ui teal basic label">首图</label>
             <input type="text" name="firstPicture" th:value="*{firstPicture}" placeholder="首图引用地址">
+            <input type="file" name="fileUpload" id="fileUpload" style="opacity: 0;position: absolute;!important;right: 0;!important;width: 80px;height: 36px;">
+            <button class="ui teal basic label">上传图片</button>
           </div>
         </div>
 
@@ -245,6 +247,9 @@
           rules: [{
             type : 'empty',
             prompt: '首图：请输入博客首图'
+          },{
+            type : 'regExp',
+            value: '/[\\s\\S]+\\.(jpg)|(jpeg)|(png)|(bmp)|(gif)/i'
           }]
         },
         description : {
@@ -266,6 +271,9 @@
       $('[name="published"]').val(true);
       $('#blog-form').submit();
     });
+    $('#fileUpload').change(function () {
+      $('[name="firstPicture"]').val(this.value);
+    })
 
    /* $('.ui.tag.dropdown')
             .dropdown({

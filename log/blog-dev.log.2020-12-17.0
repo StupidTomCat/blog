@@ -1,0 +1,63 @@
+2020-12-17 23:32:37.040  INFO 18716 --- [restartedMain] com.yyh.BlogApplication                  : Starting BlogApplication on DESKTOP-2LSD5KA with PID 18716 (D:\Idea\Project_Location\blog\target\classes started by dell in D:\Idea\Project_Location\blog)
+2020-12-17 23:32:37.046 DEBUG 18716 --- [restartedMain] com.yyh.BlogApplication                  : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-12-17 23:32:37.046  INFO 18716 --- [restartedMain] com.yyh.BlogApplication                  : The following profiles are active: develop-environment
+2020-12-17 23:32:37.213  INFO 18716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-17 23:32:37.213  INFO 18716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-17 23:32:38.493  INFO 18716 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-17 23:32:38.613  INFO 18716 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107ms. Found 5 JPA repository interfaces.
+2020-12-17 23:32:39.809  INFO 18716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-17 23:32:39.820  INFO 18716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-17 23:32:39.820  INFO 18716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-12-17 23:32:39.822  INFO 18716 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-12-17 23:32:39.823  INFO 18716 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-12-17 23:32:39.823  INFO 18716 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-12-17 23:32:39.823  INFO 18716 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-12-17 23:32:40.896  INFO 18716 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-12-17 23:32:41.030  INFO 18716 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-17 23:32:41.031  INFO 18716 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3817 ms
+2020-12-17 23:32:41.337  INFO 18716 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 23:32:41.413  INFO 18716 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-17 23:32:41.534  INFO 18716 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-12-17 23:32:41.645  WARN 18716 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-17 23:32:41.810  INFO 18716 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-17 23:32:41.951  INFO 18716 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-17 23:32:41.952  WARN 18716 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-12-17 23:32:42.069  INFO 18716 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-17 23:32:42.553  INFO 18716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-17 23:32:42.593  INFO 18716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-17 23:32:42.595  INFO 18716 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-17 23:32:42.665  INFO 18716 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-17 23:32:42.690  INFO 18716 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-12-17 23:32:43.880  INFO 18716 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-17 23:32:43.906  INFO 18716 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-17 23:32:44.739  INFO 18716 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-17 23:32:44.754  INFO 18716 --- [restartedMain] com.yyh.BlogApplication                  : Started BlogApplication in 8.477 seconds (JVM running for 10.321)
+2020-12-17 23:33:43.872  INFO 18716 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-17 23:33:43.872  INFO 18716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-17 23:33:43.882  INFO 18716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-12-17 23:33:43.936  INFO 18716 --- [http-nio-8080-exec-1] com.yyh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yyh.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-12-17 23:33:44.218  WARN 18716 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-17 23:33:44.240  WARN 18716 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-17 23:33:44.273  INFO 18716 --- [http-nio-8080-exec-1] com.yyh.aspect.LogAspect                 : doAfterReturn : index
+2020-12-17 23:33:45.581  INFO 18716 --- [http-nio-8080-exec-3] com.yyh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yyh.web.IndexController.newBlogs', args=[{}]}
+2020-12-17 23:33:45.592  INFO 18716 --- [http-nio-8080-exec-3] com.yyh.aspect.LogAspect                 : doAfterReturn : _fragments :: newblogList
+2020-12-17 23:33:49.122  INFO 18716 --- [http-nio-8080-exec-2] com.yyh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/blog/51', ip='0:0:0:0:0:0:0:1', classMethod='com.yyh.web.IndexController.blog', args=[51, {}]}
+2020-12-17 23:33:49.371  INFO 18716 --- [http-nio-8080-exec-2] com.yyh.aspect.LogAspect                 : doAfterReturn : blog
+2020-12-17 23:33:49.881  INFO 18716 --- [http-nio-8080-exec-8] com.yyh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yyh.web.IndexController.newBlogs', args=[{}]}
+2020-12-17 23:33:49.892  INFO 18716 --- [http-nio-8080-exec-8] com.yyh.aspect.LogAspect                 : doAfterReturn : _fragments :: newblogList
+2020-12-17 23:33:50.099  INFO 18716 --- [http-nio-8080-exec-1] com.yyh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/comments/51', ip='0:0:0:0:0:0:0:1', classMethod='com.yyh.web.CommentController.comments', args=[51, {}]}
+2020-12-17 23:33:50.180  INFO 18716 --- [http-nio-8080-exec-1] com.yyh.aspect.LogAspect                 : doAfterReturn : blog :: commentList
+2020-12-17 23:34:00.731  INFO 18716 --- [http-nio-8080-exec-2] com.yyh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/type/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.yyh.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-17 23:34:00.753  INFO 18716 --- [http-nio-8080-exec-2] com.yyh.aspect.LogAspect                 : doAfterReturn : types
+2020-12-17 23:34:01.174  INFO 18716 --- [http-nio-8080-exec-10] com.yyh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yyh.web.IndexController.newBlogs', args=[{}]}
+2020-12-17 23:34:01.182  INFO 18716 --- [http-nio-8080-exec-10] com.yyh.aspect.LogAspect                 : doAfterReturn : _fragments :: newblogList
+2020-12-17 23:34:07.230  INFO 18716 --- [http-nio-8080-exec-3] com.yyh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/type/3', ip='0:0:0:0:0:0:0:1', classMethod='com.yyh.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 3, {}]}
+2020-12-17 23:34:07.241  INFO 18716 --- [http-nio-8080-exec-3] com.yyh.aspect.LogAspect                 : doAfterReturn : types
+2020-12-17 23:34:07.654  INFO 18716 --- [http-nio-8080-exec-5] com.yyh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yyh.web.IndexController.newBlogs', args=[{}]}
+2020-12-17 23:34:07.661  INFO 18716 --- [http-nio-8080-exec-5] com.yyh.aspect.LogAspect                 : doAfterReturn : _fragments :: newblogList
+2020-12-17 23:34:08.959  INFO 18716 --- [http-nio-8080-exec-10] com.yyh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/type/2', ip='0:0:0:0:0:0:0:1', classMethod='com.yyh.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 2, {}]}
+2020-12-17 23:34:08.974  INFO 18716 --- [http-nio-8080-exec-10] com.yyh.aspect.LogAspect                 : doAfterReturn : types
+2020-12-17 23:34:09.338  INFO 18716 --- [http-nio-8080-exec-7] com.yyh.aspect.LogAspect                 : Request : RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yyh.web.IndexController.newBlogs', args=[{}]}
+2020-12-17 23:34:09.345  INFO 18716 --- [http-nio-8080-exec-7] com.yyh.aspect.LogAspect                 : doAfterReturn : _fragments :: newblogList
+2020-12-17 23:35:16.807  WARN 18716 --- [http-nio-8080-exec-1] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
+2020-12-17 23:35:40.295  WARN 18716 --- [http-nio-8080-exec-9] o.springframework.validation.DataBinder  : Skipping URI variable 'id' because request contains bind value with same name.
